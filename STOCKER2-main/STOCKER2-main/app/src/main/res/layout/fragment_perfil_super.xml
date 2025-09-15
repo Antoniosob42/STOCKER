@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilSuperFragment">
+
+
+    <ImageView
+        android:id="@+id/imagePerfil"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/editImageIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/pencil"
+        app:tint="#0038FF"
+        app:layout_constraintBottom_toBottomOf="@id/imagePerfil"
+        app:layout_constraintEnd_toEndOf="@id/imagePerfil" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="193dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="NOMBRE DE TU SUPERMERCADO"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/imagePerfil"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVideoProm"
+        style="@style/ButtonStyle"
+        android:layout_width="323dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/ingresa_un_video_promocional"
+        app:layout_constraintBottom_toTopOf="@+id/btnUbi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUbi"
+        style="@style/ButtonStyle"
+        android:layout_width="323dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/registrar_ubicacion_de_tu_supermercado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tuciud"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerfil" />
+
+    <TextView
+        android:id="@+id/tvDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tu_direccion2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvciudad" />
+
+    <TextView
+        android:id="@+id/tvPagWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tu_pagina_web2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDir" />
+
+    <TextView
+        android:id="@+id/tvCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tu_correo_electronico2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPagWeb" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_CloseSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/cerrar_sesion"
+        app:showAsAction="never" >
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <item
+                android:id="@+id/cerrar_sesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/cerrar_sesion" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/AcDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/i"
+        android:iconTint="#001A68"
+        android:title="@string/strAcDe"
+        app:showAsAction="always|collapseActionView|withText" />
+
+</menu>

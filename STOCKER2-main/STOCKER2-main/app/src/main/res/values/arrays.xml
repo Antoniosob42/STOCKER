@@ -1,0 +1,64 @@
+<resources>
+    <string-array name="reply_entries" >
+        <item></item>
+        <item>Ciudad Real</item>
+        <item>Madrid</item>
+        <item>Almagro</item>
+        <item>Puertollano</item>
+        <item>Pozuelo</item>
+        <item>Daimiel</item>
+        <item>Tomelloso</item>
+        <item>Sevilla</item>
+        <item>Cordoba</item>
+        <item>Granada</item>
+
+    </string-array>
+    <string-array name="reply_values">
+        <item></item>
+        <item>Ciudad Real</item>
+        <item>Madrid</item>
+        <item>Almagro</item>
+        <item>Puertollano</item>
+        <item>Pozuelo</item>
+        <item>Daimiel</item>
+        <item>Tomelloso</item>
+        <item>Sevilla</item>
+        <item>Cordoba</item>
+        <item>Granada</item>
+
+    </string-array>
+    <string-array name="Sucursales">
+        <item></item>
+        <item>Mercadona</item>
+        <item>Dia</item>
+        <item>Lidl</item>
+        <item>Carrefour</item>
+        <item>Eroski</item>
+        <item>Consum</item>
+    </string-array>
+    <string-array name="SucursalesDisplay">
+        <item></item>
+        <item>Mercadona</item>
+        <item>Dia</item>
+        <item>Lidl</item>
+        <item>Carrefour</item>
+        <item>Eroski</item>
+        <item>Consum</item>
+    </string-array>
+    <string-array name="Guardar">
+      <item>no</item>
+      <item>si</item>
+    </string-array>
+    <string-array name="GuardarDisplay">
+     <item>no</item>
+        <item>si</item>
+    </string-array>
+    <string-array name="Guardmus">
+        <item>no</item>
+        <item>si</item>
+    </string-array>
+    <string-array name="GuardmusDisplay">
+        <item>no</item>
+        <item>si</item>
+    </string-array>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".InicioSesionUsuario">
+
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etpassUsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/txtCont"
+        android:inputType="textPassword"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnombUsu" />
+
+    <TextView
+        android:id="@+id/txtintrUsu"
+        android:layout_width="248dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/introduzca_los_datos_de_su_cuenta"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etnombUsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/nombre_de_usuario"
+        android:inputType="text"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/appbar"
+        app:layout_constraintStart_toEndOf="@+id/appbar"
+        app:layout_constraintTop_toBottomOf="@+id/txtintrUsu" />
+
+    <Button
+        android:id="@+id/btnIniSesUsu"
+        style="@style/ButtonStyle"
+        android:layout_width="106dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/btIniSesi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpassUsu" />
+
+    <Button
+        android:id="@+id/btnAbreRegUsu"
+        style="@style/ButtonStyle"
+        android:layout_width="186dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/no_tienes_cuenta_registrate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniSesUsu" />
+
+    <Button
+        android:id="@+id/btnAbreIniEmp"
+        style="@style/ButtonStyle"
+        android:layout_width="275dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/eres_una_empresa_inicia_sesion_aqui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbreRegUsu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

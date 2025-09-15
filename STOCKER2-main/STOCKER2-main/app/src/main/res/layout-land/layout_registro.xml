@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ETPWBEmp"
+        android:layout_width="219dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="144dp"
+        android:ems="10"
+        android:hint="@string/Web"
+        android:inputType="text"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETDir" />
+
+    <EditText
+        android:id="@+id/ETTLF"
+        android:layout_width="219dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="148dp"
+        android:ems="10"
+        android:hint="@string/correo_electr_nico"
+        android:inputType="text"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETCiuEmpr" />
+
+    <EditText
+        android:id="@+id/ETID"
+        android:layout_width="219dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="144dp"
+        android:ems="10"
+        android:hint="@string/txtCont"
+        android:inputType="textPassword"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbIntDat" />
+
+    <EditText
+        android:id="@+id/ETCiuEmpr"
+        android:layout_width="219dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/txtLoc"
+        android:inputType="text"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toBottomOf="@+id/ETNomEmpr" />
+
+    <EditText
+        android:id="@+id/ETNomEmpr"
+        android:layout_width="219dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="148dp"
+        android:ems="10"
+        android:hint="@string/txtNomb"
+        android:inputType="text"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbIntDat" />
+
+    <TextView
+        android:id="@+id/lbIntDat"
+        android:layout_width="307dp"
+        android:layout_height="27dp"
+
+        android:layout_marginTop="60dp"
+        android:text="@string/LbIntReg"
+        android:textAlignment="center"
+        android:textColor="#B68D8D"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <Button
+        android:id="@+id/btnRegReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="#000000"
+        android:text="@string/btnRegEmp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETPWBEmp" />
+
+    <EditText
+        android:id="@+id/ETDir"
+        android:layout_width="219dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="144dp"
+        android:ems="10"
+        android:hint="@string/direcci_n"
+        android:inputType="text"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintEnd_toEndOf="@+id/appbar"
+        app:layout_constraintTop_toBottomOf="@+id/ETID" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

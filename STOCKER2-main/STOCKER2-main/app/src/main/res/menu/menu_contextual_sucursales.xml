@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_mercadona"
+        android:title="@string/mercadona" />
+    <item
+        android:id="@+id/option_dia"
+        android:title="@string/dia" />
+    <item
+        android:id="@+id/option_lidl"
+        android:title="@string/lidl" />
+    <item
+        android:id="@+id/option_carrefour"
+        android:title="@string/carrefour" />
+    <item
+        android:id="@+id/option_eroski"
+        android:title="@string/eroski" />
+    <item
+        android:id="@+id/option_consum"
+        android:title="@string/consum" />
+</menu>

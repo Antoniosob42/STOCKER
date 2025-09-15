@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp">
+
+
+    <ImageView
+        android:id="@+id/imageViewProducto"
+        android:layout_width="118dp"
+        android:layout_height="122dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="222dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProducto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCantStock"
+        android:layout_width="280dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProducto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGramos" />
+
+    <TextView
+        android:id="@+id/textViewGramos"
+        android:layout_width="246dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/gramos2"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProducto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIndiceSano" />
+
+    <TextView
+        android:id="@+id/textViewCalorias"
+        android:layout_width="143dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProducto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre" />
+
+    <TextView
+        android:id="@+id/textViewIndiceSano"
+        android:layout_width="148dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

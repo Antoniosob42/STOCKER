@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarProducto">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btFiltrar"
+        android:layout_width="162dp"
+        style="@style/EstiloB"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="112dp"
+        android:text="@string/filtrate"
+        android:textColor="#571010"
+        android:textSize="20sp"
+        app:backgroundTint="#F37372"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textfiltro"
+        android:layout_width="wrap_content"
+        style="@style/EstiloT"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ProductoBuscar"
+        android:inputType="text"
+        android:textColor="#ECDADA"
+        android:textColorHint="#C3A9A9"
+        app:layout_constraintBottom_toTopOf="@+id/btFiltrar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/SV3"
+        style="@style/SVStyle"
+        android:layout_width="504dp"
+        android:layout_height="323dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/textfiltro"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContaine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

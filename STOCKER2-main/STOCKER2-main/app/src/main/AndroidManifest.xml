@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/st"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/st_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Stocker2"
+        tools:replace="android:allowBackup"
+        tools:targetApi="31">
+
+        <service
+            android:name=".services.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".SupersConProducto"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitySuperMercado"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".InicioSesionUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".VerProducto"
+            android:exported="false" />
+        <activity
+            android:name=".ReciclerProductos"
+            android:exported="false" />
+        <activity
+            android:name=".VerEnMapa"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroMapas"
+            android:exported="false" />
+        <activity
+            android:name=".ReproductorMercado"
+            android:exported="false" />
+        <activity
+            android:name=".VerVideo"
+            android:exported="false" />
+        <activity
+            android:name=".SubirVideo"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".PREFERENCIAS"
+            android:exported="false" />
+        <activity
+            android:name=".AcercaDeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductosMercado"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarTienda"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityIngresoProductos"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActividadRegistro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActividadInicioSesion"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.stockimg"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="WrongManifestParent">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/dcim_camara" />
+        </provider>
+    </application>
+
+</manifest>

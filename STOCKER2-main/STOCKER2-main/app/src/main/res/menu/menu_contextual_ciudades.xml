@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_ciudad_real"
+        android:title="Ciudad Real" />
+    <item
+        android:id="@+id/option_madrid"
+        android:title="Madrid" />
+    <item
+        android:id="@+id/option_almagro"
+        android:title="Almagro" />
+    <item
+        android:id="@+id/option_puertollano"
+        android:title="Puertollano" />
+    <item
+        android:id="@+id/option_pozuelo"
+        android:title="Pozuelo" />
+    <item
+        android:id="@+id/option_daimiel"
+        android:title="Daimiel" />
+    <item
+        android:id="@+id/option_tomelloso"
+        android:title="Tomelloso" />
+    <item
+        android:id="@+id/option_sevilla"
+        android:title="Sevilla" />
+    <item
+        android:id="@+id/option_cordoba"
+        android:title="Cordoba" />
+    <item
+        android:id="@+id/option_granada"
+        android:title="Granada" />
+</menu>

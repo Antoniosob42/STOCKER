@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/AcDe"
+        android:title="@string/strAcDe"
+        android:icon="@drawable/i"
+        app:showAsAction="ifRoom|collapseActionView|withText" />
+
+    <item
+        android:id="@+id/Preferencias"
+        android:title="@string/editar_preferencias"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/cerrar_sesion"
+        android:title="@string/cerrar_sesion"
+        app:showAsAction="never" />
+</menu>

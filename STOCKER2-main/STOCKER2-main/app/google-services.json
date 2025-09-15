@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "366327143822",
+    "project_id": "stocker2-98ea9",
+    "storage_bucket": "stocker2-98ea9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366327143822:android:e3ccb2a6d00da9eb8798df",
+        "android_client_info": {
+          "package_name": "com.example.stocker2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnf-RBgmR_4hXD7XfGINu9v5aRerVUHMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

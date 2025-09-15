@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BTNABREINIUSU"
+        style="@style/ButtonStyle"
+        android:layout_width="171dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="126dp"
+        android:backgroundTint="#28282E"
+        android:onClick="abrirRegistrar"
+        android:text="Volver Al Inicio de Sesion del Usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNABREREG" />
+
+    <EditText
+        android:id="@+id/etISC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="168dp"
+        android:ems="10"
+        android:hint="@string/txtCont"
+        android:inputType="textPassword"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtintrNomb" />
+
+    <TextView
+        android:id="@+id/txtintrNomb"
+        android:layout_width="319dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/intNombEmp"
+        android:textAlignment="center"
+        android:textColor="#B68D8D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <EditText
+        android:id="@+id/ETISN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/txtNomb"
+        android:inputType="text"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintEnd_toStartOf="@+id/etISC"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtintrNomb" />
+
+    <EditText
+        android:id="@+id/etOpcDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/direcci_n"
+        android:inputType="text"
+        android:textColor="#B68D8D"
+        android:textColorHint="#B68D8D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etISC" />
+
+    <Button
+        android:id="@+id/btnIniSec"
+        android:layout_width="106dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#3A3A3A"
+        android:text="@string/btIniSesi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etOpcDir" />
+
+    <Button
+        android:id="@+id/BTNABREREG"
+        android:layout_width="160dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="216dp"
+        android:backgroundTint="#1C1D51"
+        android:onClick="abrirRegistrar"
+        android:text="@string/btnRegEmp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etOpcDir" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
